@@ -58,9 +58,9 @@ class Check_radius{
              * THE LOGIC :-
              *
              * the logic are very easy
-             * 1. now i have all value but you know we are human so we all do mistake so i also validate the variable also.
-             * 2. than, i make my own two variable (computer_perimeter , computer_area) where i check find area and perimeter by user radius
-             * 3. than, i jest match my two variable (computer_perimeter , computer_area) to user input two variable (area , perimeter)
+             * 1. Now i have all value but you know we are human so we all do mistake so i also validate the variable also.
+             * 2. Than, i make my own two variable (computer_perimeter , computer_area) where i check find area and perimeter by user radius
+             * 3. Than, i jest match my two variable (computer_perimeter , computer_area) to user input two variable (area , perimeter)
              * 4. Or, finally i print the answer using if else
              *
              * MORE IMPROVE :-
@@ -76,13 +76,15 @@ class Check_radius{
             computer_perimeter = Math.round(computer_perimeter*100.0)/100.0;
             computer_area = Math.round(computer_area*100.0)/100.0;
 
+
+
             if (computer_area == Math.round(area*100.0)/100.0){
                 if (computer_perimeter == Math.round(perimeter*100.0)/100.0){
-                    System.out.println("Ya, your Perimeter" + "(" + perimeter + ")" + " and Area"+ "(" + area + ")" + " correct according to Radius"+ "(" + radius + ")" + ".");
+                    System.out.println("Ya, your Perimeter" + "(" + perimeter + ") cm" + " and Area"+ "(" + area + ") cm" + " correct according to Radius"+ "(" + radius + ") cm" + ".");
                 }
             } else {
-                System.out.println("Opp's, !! your Perimeter" + "(" + perimeter + ")" + " and Area"+ "(" + area + ")" + " does not according to Radius"+ "(" + radius + ")" + ".");
-                System.out.println("Because According to your Radius" + "(" + perimeter + ")" + " your Area will be " + (computer_area) + " and Perimeter will be " + (computer_perimeter) + ".");
+                System.out.println("Opp's, !! your Perimeter" + "(" + perimeter + ") cm" + " and Area"+ "(" + area + ") cm" + " does not according to Radius"+ "(" + radius + ") cm" + ".");
+                System.out.println("Because According to your Radius" + "(" + radius + ") cm" + " your Area will be " + (computer_area) + " cm and Perimeter will be " + (computer_perimeter) + " cm.");
             }
         }
 
@@ -94,9 +96,9 @@ class Check_radius{
 public class task {
     public static void main(String[] args) {
         Check_radius check_radius = new Check_radius(); // Make a obj of class.
-        check_radius.setRadius(0.0); // Set radius value
-        check_radius.setArea(0.0); // Set Area value
-        check_radius.setPerimeter(0.0); // Set Perimeter value
+        check_radius.setRadius(5.0); // Set radius value
+        check_radius.setArea(78.54); // Set Area value
+        check_radius.setPerimeter(31.42); // Set Perimeter value
         check_radius.answer(); // !!!! Call These function to get Answer or final result..
     }
 }
